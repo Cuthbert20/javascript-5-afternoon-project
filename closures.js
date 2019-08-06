@@ -216,9 +216,10 @@ function secretNumber() {
 
 function timeOutCounter() {
   for (var i = 0; i <= 5; i++) {
+    let n = i//assigned i to n so that every time it loops through it is assigning i to n.
     setTimeout(function() {
-      console.log(i);
-    }, i * 1000);
+      console.log(n);
+    }, n * 1000);
   }
 }
 timeOutCounter();
